@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>[ Johhny Li @ Uidaho ]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span><a href="#"><img border="0" width="170" src="images/UI.jpg"/></a></span>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                <li><a href="bio.html">Biography</a></li>
+                                <!-- <li><a href="cv.html">CV (Web)</a></li> -->
+                                <li><a target="_blank" href="Johnny-Li-cv.pdf">CV (PDF)</a></li>
+                            </ul>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li>
+
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">People</a>
+                        </li>
+
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="publications/">All</a></li>  
+                            </ul>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+                        </li>
+                        
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+                </section>
+
+
+
+        <div class="col-md-12" style="text-align: center; padding-top: 30px; padding-bottom: 30px;">
+            <img id="bg-img" src="images/bg.jpg" alt="" style="display: block; margin: auto; border-radius: 5%;">
+         </div>
+                
+         <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+                        <p class="lead">
+                            <strong>Welcome</strong> to the Precision Agriculture and Intelligent Robotics Laboratory (PAIR) led by Dr. <a href="https://www.uidaho.edu/cals/soil-and-water-systems/our-people/johnny-li" style="color: blue;">Johnny Li</a>! Our lab explores the forefront of IoT and robotics in agriculture, merging advanced sensing, control, and computing technologies. We utilize state-of-the-art tools such as UAVs, ground robots, and satellite imagery combined with deep learning and high-performance computing to innovate sustainable solutions for environmental and agricultural management. Click below to learn more about our research initiatives.
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+         
+
+
+        
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                
+                <div align="left" class="col-md-3">
+                    <a target="_blank" href="images/johnny-li.jpg" >
+                        <img id="mobile-img" src="images/johnny-li.jpg" width="200" border="0" height="250" alt=""></a>
+                </div>
+                <div align="left" class="col-md-4">
+                    <h2>Johnny (Liujun) Li
+                        <h5><i>Precision Agriculture & Intelligent Robotics</i></h5>
+                    </h2>
+                    
+                    <h4>Assistant Professor<br>
+                        <a href="https://www.uidaho.edu/cals/soil-and-water-systems">Dept. of Soil and Water Systems</a><br>
+                        <a href="https://www.uidaho.edu">University of Idaho</a><br>
+                        <!--
+                         P.O. Box 20537<br>
+                         1678 Nicosia, CYPRUS<br>-->
+                        Tel/Fax: <a href="tel:208-885-1015">+208-885-1015</a> / <a href="tel:208-885-1015">01</a><br/>
+                        Email:
+                        <script language="JavaScript">
+                            <!--
+                            document.write("&nbsp;");
+                            spiderjam('liujunl','uidaho.edu');
+                            -->
+                            </script><br/>
+                        <!-- Lab: <a target="_blank" href="https://dmsl.cs.ucy.ac.cy/">http://dmsl.cs.ucy.ac.cy/</a><br> -->
+                        Directions: <a target="_blank" href="https://www.uidaho.edu/cals/soil-and-water-systems/our-people/johnny-li">personal page</a>
+                    </h4>
+                    
+                </div>
+                
+                <i class="twittertop" style="display:none;" id="t1">
+                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+
+                        <center><a class="twitter-timeline" href="https://x.com/PairLi2022" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
+                            data-height="300">Tweets
+                            by @Johnny-Li</a>
+                        <script>!function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + "://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "twitter-wjs");</script></center>
+                    </div>
+                </i>
+
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+                        <p class="lead">
+                            Johnny Li is an assistant professor in the Department of Soil and Water Systems in the College and Agricultural and Life Science at the University of Idaho. He is the founding director of Precision Agriculture and Intelligent Robotics Laboratory (PAIR) and he is also an affiliate professor at the Center for Intelligent Industry Robot (CI2R) at the University of Idaho.
+                        
+                        </p>
+                        <p>
+                            Li’s research is at the intersection of IoT/robotics sensing, control and computing because of his interdisciplinary background on the design, control, and modeling of dynamic systems trained in agricultural automation (bachelor’s degree), material science (master’s degree) and mechatronics (doctorate) as well as extensive R&D experience of agricultural and defense IoT sensor and robots-enable remote sensing and precision agriculture gained from working in academia and private industry. The long-term research goal of Li’s group is to empower Agricultural Intelligent Cyber-Physical Systems (AI-CPS) for sustainable agricultural and environmental management though advancing the sensing, control, and communication theories of robotics and IoT sensors and integrating them into scalable computational resources at edge and cloud to support data-driven agronomic decision strategies. Li’s research focuses on research and developing next-generation IoT and robotics sensing, control and computing and their interfacing with interpretable artificial intelligence and climate-smart decision support systems through extensive in-field measurement, ground vehicle and robot, UAV and satellite imaging, deep machine learning and high-performance computing, and process-based agricultural production system modeling. His lab closely works with computer scientists, soil scientists, plant physiologists, agronomists, engineers in addressing the sustainable agricultural and environment management challenges.</i>
+                        <p>
+                            Li has been the PI on over $1.5M grants awarded from NSF and DoD since 2019. He has authored over 40 publications in scientific peer-reviewed journals.
+                        </p>
+                        
+                        <p><a href="bio.html" class="btn-sm btn-primary">Biography &raquo;</a>
+                        <!--<a href="cv.html" class="btn-sm btn-primary">CV (Web)&raquo;</a> -->
+                        <a href="Johnny-Li-cv.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <div class="twitterlow" style="display:none;" id="t1">
+            <!-- News Section -->
+            <section  name="news"  id="news">
+                <div class="container lead">
+                    <div style="text-align: left; margin-top:10px" class="col-md-12">
+                        
+                        <b class="noshow" style="display:none;" id="tab-2">
+                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" >News  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                        </b>
+                        <b class="allshow" style="display:none;" >
+                            
+                            <hr class="star-primary">
+                            
+                            <h2>News</h2>
+                            <center><a class="twitter-timeline" href="https://x.com/PairLi2022" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
+                                by @dmslcy</a>
+                            <script>!function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + "://platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+                            </script>
+                            </center>
+                        </b>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+                <!-- People Section -->
+                <section  name="courses" id="courses">
+                    <div class="container lead">
+                        <div style="text-align: left; margin-top:10px" class="col-md-12">
+                            
+                            <b class="noshow" style="display:none;" id="tab-5">
+                                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                            </b>
+                            <div class="allshow" style="display:none;" id="tab-courses-content">
+                                <hr class="star-primary">
+                                <h2>Our People</h2>
+                                <section class="profile">
+                                    <h2>Principle Investigator</h2>
+                                    <div style="display: flex; align-items: start;">
+                                        <img src="images/johnny-li.jpg" alt="Johnny Li" style="width: 200px; height: auto; margin-right: 30px; border-radius: 30%;">
+                                        <div>
+                                            <h2>Johnny Li</h2>
+                                            <p>Johnny Li is an Assistant Professor of Soil and Water Systems at the University of Idaho. Before his current role, Johnny was an Associate Research Professor at Missouri University of Science and Technology and has held postdoctoral positions at several institutions including the University of Georgia and the University of Illinois at Urbana-Champaign. He earned his Ph.D. in Mechanical Engineering from Central South University, a M.S. in Materials Engineering from the same university, and a B.S. in Automation from Hunan Agricultural University.</p>
+                                            <h5>Email: liujunl@uidaho.edu</h5>
+                                        </div>
+                                    </div>
+                                </section>
+        
+                                <section class="profile">
+                                    <h2>Graduate Student</h2>
+                                    <div style="display: flex; align-items: start;">
+                                        <img src="images/damo.jpg" alt="Damo Wang" style="width: 200px; height: auto; margin-right: 30px; border-radius: 30%;">
+                                        <div>
+                                            <h2>Damo Wang</h2>
+                                            <p>Damo Wang is a PhD candidate of Applied Electromagnetic in Electrical and Computer Engineering at the University of Idaho, under the supervision of Dr. Ting-Yen Shih. He has a Master’s in Electromagnetics, Plasma and Optics from Northeastern University, Boston, and a Bachelor’s in Electronics Science and Technology from Hunan University, China. His research focuses on flexible array antennas, ISM band radar sensing and high-power RF microwave circuit, with interests in machine learning applications in agriculture and biomedical. He also worked as a Teaching Assistant for Electromagnetics Laboratory. Since 2021, he has been an active member of IEEE, IEEE Young Professionals and Antennas and Propagation Society. He presented at USNC-URSI National Radio Science Meeting and published related works in 2023. He enjoys traveling and cooking and gains fresh perspectives and inspiration from daily life.</p>
+                                            <h5>Email: damow@uidaho.edu</h5>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                                <section class="profile">
+                                    <div style="display: flex; align-items: start;">
+                                        <img src="images/Sabid.jpg" alt="Sabid Hasan" style="width: 200px; height: auto; margin-right: 30px; border-radius: 30%;">
+                                        <div>
+                                            <h2>Md Sabid Hasan</h2>
+                                            <p>Md Sabid Hasan holds a Bachelor's degree in Electrical and Electronic Engineering from the Bangladesh Army University of Engineering and Technology (BAUET), Bangladesh. He is proficient in Python programming for data analysis, utilizing advanced machine-learning techniques. His research expertise spans Computer Vision, Deep Learning, Robotics & Automation, Intelligent Transport Systems, and Mechanical Design, with a particular focus on Ag-robotics. Sabid’s contributions to Computer Vision and Deep Learning have been pivotal in advancing precision agriculture, where he has developed efficient models for crop monitoring and field robot applications. He gained valuable industry experience as part of the Queensland Government's Cooperative and Highly Automated Driving (CHAD) Pilot project in 2021. Currently, Sabid is pursuing a master’s degree in Water Resource Engineering at the University of Idaho. Alongside his studies, he serves as a graduate research assistant at the Precision Agriculture and Intelligent Robotics Laboratory, furthering innovations at the intersection of agriculture, robotics, and machine learning</p>
+                                            <h5>Email: hasa5595@vandals.uidaho.edu</h5>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="profile">
+                                    <div style="display: flex; align-items: start;">
+                                        <img src="images/benqi.jpg" alt="Benqi Zhang" style="width: 200px; height: auto; margin-right: 30px; border-radius: 30%;">
+                                        <div>
+                                            <h2>Benqi Zhang</h2>
+                                            <p>Benqi Zhang graduated from the University of Idaho with a Bachelor of Science in Computer Science. He is currently a master's student under the guidance of Dr. Johnny Li. He has a strong interest in the application of artificial intelligence. He enjoys traveling and fitness.</p>
+                                            <h5>Email: zhan4669@vandals.uidaho.edu</h5>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="profile">
+                                    <div style="display: flex; align-items: start;">
+                                        <img src="images/kwaku.jpg" alt="Kwaku" style="width: 200px; height: auto; margin-right: 30px; border-radius: 30%;">
+                                        <div>
+                                            <h2>Kwaku Opoku-Ware</h2>
+                                            <p>Kwaku Opoku-Ware is a graduate student in the Soil and Water Systems Department 
+                                                pursuing a degree in Water Resources Engineering under the supervision of Dr. Johnny 
+                                                Li. He was an ERASMUS+ mobility scholar in Master of Science in Forest Information 
+                                                Technology at the Eberswalde University of Sustainable Development, Germany. Kwaku 
+                                                had his undergraduate degree in BSc, Natural Resources Management at the University 
+                                                of Energy and Natural Resources, Sunyani, Ghana. At his free time, Kwaku enjoys 
+                                                playing soccer with friends.</p>
+                                            <h5>Email: opok2621@vandals.uidaho.edu</h5>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="profile">
+                                    <div style="display: flex; align-items: start;">
+                                        <img src="images/Iris.png" alt="Iris(Liyan) Wang" style="width: 200px; height: auto; margin-right: 30px; border-radius: 30%;">
+                                        <div>
+                                            <h2>Iris(Liyan) Wang</h2>
+                                            <p>Iris (Liyan) Wang, from China, is a PhD student in Computer Science major in University of Idaho. Her research topic is computer vision. Before she came to US, she worked as consultant from 2010 to 2014 and Machine Learning modeler from 2014 to 2022 in China.</p>
+                                            <h5>Email: wang6095@vandals.uidaho.edu</h5>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+
+                                <section class="profile">
+                                    <div style="display: flex; align-items: start;">
+                                        <img src="images/abir.jpg" alt="Abir" style="width: 200px; height: auto; margin-right: 30px; border-radius: 30%;">
+                                        <div>
+                                            <h2>Md. Abir Islam Mishad</h2>
+                                            <p>I’m Abir, currently pursuing a Bachelor's in Computer Engineering at the U of I. Robotics has always been my passion. I never get bored making robots and doing experiments with new circuits. I've been involved with robotics since primary school. In my childhood, I used to break my toys just to see what’s inside. I love the creativity and problem-solving in designing and building them. Experimenting with new circuits and pushing the boundaries of what's possible fills me with excitement. From programming to soldering, every step is a rewarding adventure, and watching my creations come to life is pure joy. </p>
+                                            <h5>Email: mish5387@vandals.uidaho.edu</h5>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- News Section -->
+                <section name="systems" id="systems">
+                    <div class="container lead">
+                        <div style="text-align: left; margin-top:10px" class="col-md-12">
+                            
+                            <b class="noshow" style="display:none;" id="tab-4">
+                                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">Systems  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                            </b>
+                            
+                            <div class="allshow" style="display:none;" id="tab-news-content">
+                                <hr class="star-primary">
+                                <h2>News <a href="https://x.com/PairLi2022" class="btn btn-primary">More &raquo;</a></h2>
+                                <ul>
+                                    
+                                    
+                                    <p>
+                                    Our group enjoys transforming basic research results into systems and services:
+                                    </p>
+                                    
+                                    <li><span class="label label-success">TBD</span> <a target="_blank" href="https://greenhousechallenge.azurewebsites.net/dashboard" target="_blank">Green House Challenge</a> (Spatial, Big Data, Decaying)</li>
+                                    <li><span class="label label-success">TBD</span> <a target="_blank" href="https://x.com/johnnylst2/status/1826872932905484713" target="_blank">2024 ASABE Ag Robotics Competition</a> (Agricultural, Robotics, Competition)</li>
+
+                                    <br><a target="_blank" href="https://www.uidaho.edu/"><img border="0" width="150" src="images/UI2.jpg"/></a>
+                                    <!-- <a target="_blank" href="https://github.com/dmsl/"><img border="0" width="250" src="images/github-logo.png"/></a> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+        
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        
+                        <h2>Selected Publications <a href="https://scholar.google.com/citations?hl=zh-CN&user=nFBC2C4AAAAJ" class="btn btn-primary"> All Publications&raquo; </a>
+                        </h2>
+                        <h4>
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/H-index"><font color=white>h-index</font></a>: 17
+                            </span>&nbsp;
+                            <span class="label label-warning">
+                                <a target="_blank" href="https://scholar.google.com/citations?hl=zh-CN&user=nFBC2C4AAAAJ"><font color=white>Citations</font></a>: 1167
+                            </span>&nbsp;
+                            
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.scopus.com/authid/detail.uri?authorId=57223640968"><font color="white">Scopus</font></a>
+                            </span>&nbsp;
+                            <span class="label label-default">
+                                <a target="_blank" href="https://www.researcherid.com/rid/O-2301-2016"><font color="white">ResearcherID</font></a>
+                            </span>
+                            
+                            
+                        </h4>
+                        <ul>
+                            <li><span class="label label-success">Journal of Materials Processing Technology 2007</span> <a target="_blank" href="#">"Effect of powder loading on metal injection molding stainless steels"</a>, Y Li, L Li, KA Khalil, <b>Journal of Materials Processing Technology 183 (2-3)</b>, pp. 432-439, 229 citations, 2007.</li>
+                            <li><span class="label label-success">Remote Sensing of Environment 2016</span> <a target="_blank" href="#">"Development of methods to improve soybean yield estimation and predict plant maturity with an unmanned aerial vehicle based platform"</a>, N Yu, L Li, N Schmitz, LF Tian, JA Greenberg, BW Diers, <b>Remote Sensing of Environment 187</b>, pp. 91-101, 216 citations, 2016.</li>
+                            <li><span class="label label-success">Knowledge-Based Systems 2022</span> <a target="_blank" href="#">"Fast forest fire smoke detection using MVMNet"</a>, Y Hu, J Zhan, G Zhou, A Chen, W Cai, K Guo, Y Hu, L Li, <b>Knowledge-Based Systems 241</b>, article 108219, 87 citations, 2022.</li>
+                            <li><span class="label label-success">Computers and Electronics in Agriculture 2022</span> <a target="_blank" href="#">"A high-precision forest fire smoke detection approach based on ARGNet"</a>, J Zhan, Y Hu, G Zhou, Y Wang, W Cai, L Li, <b>Computers and Electronics in Agriculture 196</b>, article 106874, 48 citations, 2022.</li>
+                            <li><span class="label label-success">2016 ASABE Annual International Meeting 2016</span> <a target="_blank" href="#">"Real-time UAV weed scout for selective weed control by adaptive robust control and machine learning algorithm"</a>, L Li, Y Fan, X Huang, L Tian, <b>2016 ASABE Annual International Meeting</b>, p. 1, 41 citations, 2016.</li>
+                            <li><span class="label label-success">Journal of Terramechanics 2014</span> <a target="_blank" href="#">"Design and development of a variable ground clearance, variable wheel track self-leveling hillside vehicle power chassis (V2-HVPC)"</a>, Q Gao, F Gao, L Tian, L Li, N Ding, G Xu, D Jiang, <b>Journal of Terramechanics 56</b>, pp. 77-90, 38 citations, 2014.</li>
+                            <li><span class="label label-success">Symmetry 2021</span> <a target="_blank" href="#">"PDAM–STPNNet: A small target detection approach for wildland fire smoke through remote sensing images"</a>, J Zhan, Y Hu, W Cai, G Zhou, L Li, <b>Symmetry 13 (12)</b>, p. 2260, 37 citations, 2021.</li>
+                            <li><span class="label label-success">Engineering Structures 2022</span> <a target="_blank" href="#">"A neural network-based multivariate seismic classifier for simultaneous post-earthquake fragility estimation and damage classification"</a>, HZ Xinzhe Yuan, Genda Chen, Pu Jiao, Liujun Li, Jun Han, <b>Engineering Structures 255</b>, article 113918, p. 16, 30 citations, 2022.</li>
+                            <li><span class="label label-success">Applied Soft Computing 2022</span> <a target="_blank" href="#">"MMDGAN: A fusion data augmentation method for tomato-leaf disease identification"</a>, L Zhang, G Zhou, C Lu, A Chen, Y Wang, L Li, W Cai, <b>Applied Soft Computing 123</b>, article 108969, 26 citations, 2022.</li>
+                            <li><span class="label label-success">Computers and Electronics in Agriculture 2022</span> <a target="_blank" href="#">"Multi-channel feature fusion networks with hard coordinate attention mechanism for maize disease identification under complex backgrounds"</a>, S Fang, Y Wang, G Zhou, A Chen, W Cai, Q Wang, Y Hu, L Li, <b>Computers and Electronics in Agriculture 203</b>, article 107486, 25 citations, 2022.</li>
+                            <li><span class="label label-success">Applied Soft Computing 2022</span> <a target="_blank" href="#">"Multi-scale sparse network with cross-attention mechanism for image-based butterflies fine-grained classification"</a>, M Li, G Zhou, W Cai, J Li, M Li, M He, Y Hu, L Li, <b>Applied Soft Computing 117</b>, article 108419, 24 citations, 2022.</li>
+                            <li><span class="label label-success">Engineering Applications of Artificial Intelligence 2023</span> <a target="_blank" href="#">"Identification of tomato leaf diseases based on LMBRNet"</a>, M Li, G Zhou, A Chen, L Li, Y Hu, <b>Engineering Applications of Artificial Intelligence 123</b>, article 106195, 22 citations, 2023.</li>
+                            <li><span class="label label-success">2009 International Conference on Mechatronics and Automation</span> <a target="_blank" href="#">"Modeling and simulation of active-controlled heave compensation system of deep-sea mining based on dynamic vibration absorber"</a>, L Li, S Liu, <b>2009 International Conference on Mechatronics and Automation</b>, pp. 1337-1341, 22 citations, 2009.</li>
+                            <li><span class="label label-success">Arabian Journal for Science and Engineering 2023</span> <a target="_blank" href="#">"MFaster r-CNN for maize leaf diseases detection based on machine vision"</a>, J He, T Liu, L Li, Y Hu, G Zhou, <b>Arabian Journal for Science and Engineering 48 (2)</b>, pp. 1437-1449, 20 citations, 2023.</li>
+                            <li><span class="label label-success">Computers and Electronics in Agriculture 2023</span> <a target="_blank" href="#">"Identification of tomato leaf diseases based on multi-channel automatic orientation recurrent attention network"</a>, Y Zhang, S Huang, G Zhou, Y Hu, L Li, <b>Computers and Electronics in Agriculture 205</b>, article 107605, 19 citations, 2023.</li>
+                            <li><span class="label label-success">Frontiers in Built Environment 2021</span> <a target="_blank" href="#">"Encoding time-series ground motions as images for convolutional neural networks-based seismic damage evaluation"</a>, X Yuan, D Tanksley, P Jiao, L Li, G Chen, D Wunsch, <b>Frontiers in Built Environment 7</b>, article 660103, 19 citations, 2021.</li>
+                            <li><span class="label label-success">IEEE Internet of Things Journal 2023</span> <a target="_blank" href="#">"MMFNet: Forest fire smoke detection using multiscale convergence coordinated pyramid network with mixed attention and fast-robust NMS"</a>, L Zhang, C Lu, H Xu, A Chen, L Li, G Zhou, <b>IEEE Internet of Things Journal 10 (20)</b>, pp. 18168-18180, 18 citations, 2023.</li>
+                            <li><span class="label label-success">Applied Sciences 2021</span> <a target="_blank" href="#">"Faster post-earthquake damage assessment based on 1D convolutional neural networks"</a>, X Yuan, D Tanksley, L Li, H Zhang, G Chen, D Wunsch, <b>Applied Sciences 11 (21)</b>, p. 9844, 16 citations, 2021.</li>
+                            <li><span class="label label-success">Biosystems Engineering 2014</span> <a target="_blank" href="#">"Development of a 3D ego-motion estimation system for an autonomous agricultural vehicle"</a>, D Jiang, L Yang, D Li, F Gao, L Tian, L Li, <b>Biosystems Engineering 121</b>, pp. 150-159, 16 citations, 2014.</li>
+                            <li><span class="label label-success">Plant Phenomics 2023</span> <a target="_blank" href="#">"An effective image-based tomato leaf disease segmentation method using MC-UNet"</a>, Y Deng, H Xi, G Zhou, A Chen, Y Wang, L Li, Y Hu, <b>Plant Phenomics 5</b>, article 0049, 15 citations, 2023.</li>
+                            <li><span class="label label-success">Plant Phenomics 2023</span> <a target="_blank" href="#">"A precise image-based tomato leaf disease detection approach using PLPNet"</a>, Z Tang, X He, G Zhou, A Chen, Y Wang, L Li, Y Hu, <b>Plant Phenomics 5</b>, article 0042, 15 citations, 2023.</li>
+                            <li><span class="label label-success">Drones 2023</span> <a target="_blank" href="#">"Segmentation detection method for complex road cracks collected by UAV based on HC-Unet++"</a>, H Cao, Y Gao, W Cai, Z Xu, L Li, <b>Drones 7 (3)</b>, p. 189, 14 citations, 2023.</li>
+                            <li><span class="label label-success">Engineering Applications of Artificial Intelligence 2023</span> <a target="_blank" href="#">"Identification of grape leaf diseases based on VN-BWT and Siamese DWOAM-DRNet"</a>, C Cai, Q Wang, W Cai, Y Yang, Y Hu, L Li, Y Wang, G Zhou, <b>Engineering Applications of Artificial Intelligence 123</b>, article 106341, 13 citations, 2023.</li>
+                            <li><span class="label label-success">Frontiers in Plant Science 2022</span> <a target="_blank" href="#">"Casm-amfmnet: a network based on coordinate attention shuffle mechanism and asymmetric multi-scale fusion module for classification of grape leaf diseases"</a>, J Suo, J Zhan, G Zhou, A Chen, Y Hu, W Huang, W Cai, Y Hu, L Li, <b>Frontiers in Plant Science 13</b>, article 846767, 13 citations, 2022.</li>
+                            <li><span class="label label-success">Plos One 2022</span> <a target="_blank" href="#">"BC-DUnet-based segmentation of fine cracks in bridges under a complex background"</a>, T Liu, L Zhang, G Zhou, W Cai, C Cai, L Li, <b>Plos One 17 (3)</b>, article e0265258, 12 citations, 2022.</li>
+                            <li><span class="label label-success">Computational Intelligence and Neuroscience 2022</span> <a target="_blank" href="#">"DCCAM‐MRNet: Mixed Residual Connection Network with Dilated Convolution and Coordinate Attention Mechanism for Tomato Disease Identification"</a>, Y Liu, Y Hu, W Cai, G Zhou, J Zhan, L Li, <b>Computational Intelligence and Neuroscience 2022</b>, article 4848425, 12 citations, 2022.</li>
+                            <li><span class="label label-success">Agronomy 2023</span> <a target="_blank" href="#">"Apple leaf disease identification in complex background based on BAM-net"</a>, Y Gao, Z Cao, W Cai, G Gong, G Zhou, L Li, <b>Agronomy 13 (5)</b>, p. 1240, 10 citations, 2023.</li>
+                            <li><span class="label label-success">Remote Sensing 2022</span> <a target="_blank" href="#">"LLAM-MDCNet for detecting remote sensing images of dead tree clusters"</a>, Z Li, R Yang, W Cai, Y Xue, Y Hu, L Li, <b>Remote Sensing 14 (15)</b>, p. 3684, 9 citations, 2022.</li>
+                            <li><span class="label label-success">Automation in Construction 2023</span> <a target="_blank" href="#">"UAV-based road crack object-detection algorithm"</a>, X He, Z Tang, Y Deng, G Zhou, Y Wang, L Li, <b>Automation in Construction 154</b>, article 105014, 8 citations, 2023.</li>
+                            <li><span class="label label-success">IEEE Systems Journal 2022</span> <a target="_blank" href="#">"BCMNet: Cross-layer extraction structure and multiscale downsampling network with bidirectional transpose FPN for fast detection of wildfire smoke"</a>, J Li, G Zhou, A Chen, C Lu, L Li, <b>IEEE Systems Journal 17 (1)</b>, pp. 1235-1246, 8 citations, 2022.</li>
+                            <li><span class="label label-success">International Journal of Advanced Robotic Systems 2015</span> <a target="_blank" href="#">"Extended-search, Bézier curve-based lane detection and reconstruction system for an intelligent vehicle"</a>, X Huang, F Gao, G Xu, N Ding, L Li, Y Cai, <b>International Journal of Advanced Robotic Systems 12 (9)</b>, p. 132, 8 citations, 2015.</li>
+    <li><span class="label label-success">Frontiers in Plant Science 2022</span> <a target="_blank" href="#">"DS-MENet for the classification of citrus disease"</a>, X Liu, Y Hu, G Zhou, W Cai, M He, J Zhan, Y Hu, L Li, <b>Frontiers in Plant Science 13</b>, article 884464, 7 citations, 2022.</li>
+    <li><span class="label label-success">Frontiers in Plant Science 2022</span> <a target="_blank" href="#">"MDAM-DRNet: Dual channel residual network with multi-directional attention mechanism in strawberry leaf diseases detection"</a>, T Liao, R Yang, P Zhao, W Zhou, M He, L Li, <b>Frontiers in Plant Science 13</b>, article 869524, 7 citations, 2022.</li>
+    <li><span class="label label-success">Frontiers in Aging Neuroscience 2022</span> <a target="_blank" href="#">"MPC-STANet: Alzheimer’s disease recognition method based on multiple phantom convolution and spatial transformation attention mechanism"</a>, Y Liu, K Tang, W Cai, A Chen, G Zhou, L Li, R Liu, <b>Frontiers in Aging Neuroscience 14</b>, article 918462, 7 citations, 2022.</li>
+    <li><span class="label label-success">2010 International Conference on Intelligent System Design and Engineering</span> <a target="_blank" href="#">"Simulation Research on the Semi-active Heave Compensation System Based on H8 Robust Control"</a>, X Zhang, S Liu, F Zeng, L Li, <b>2010 International Conference on Intelligent System Design and Engineering</b>, 7 citations, 2010.</li>
+    <li><span class="label label-success">2010 International Conference on Digital Manufacturing & Automation</span> <a target="_blank" href="#">"Control performance simulation on heave compensation system of deep-sea mining based on dynamic vibration absorber"</a>, S Liu, L Li, <b>2010 International Conference on Digital Manufacturing & Automation 1</b>, pp. 441-445, 6 citations, 2010.</li>
+    <li><span class="label label-success">Computer‐Aided Civil and Infrastructure Engineering 2024</span> <a target="_blank" href="#">"An integration–competition network for bridge crack segmentation under complex scenes"</a>, L Sun, Y Yang, G Zhou, A Chen, Y Zhang, W Cai, L Li, <b>Computer‐Aided Civil and Infrastructure Engineering 39 (4)</b>, pp. 617-634, 5 citations, 2024.</li>
+    <li><span class="label label-success">Symmetry 2021</span> <a target="_blank" href="#">"A High-precision Forest Fire Smoke Detection Approach Based on DRGNet to Remote Sensing Through Uavs"</a>, J Zhan, Y Hu, G Zhou, Y Wang, W Cai, L Li, <b>Symmetry 13 (8)</b>, 5 citations, 2021.</li>
+    <li><span class="label label-success">Knowledge-Based Systems 2024</span> <a target="_blank" href="#">"SMWE-GFPNNet: A high-precision and robust method for forest fire smoke detection"</a>, R Li, Y Hu, L Li, R Guan, R Yang, J Zhan, W Cai, Y Wang, H Xu, L Li, <b>Knowledge-Based Systems 289</b>, article 111528, 4 citations, 2024.</li>
+    <li><span class="label label-success">Signal Processing 2023</span> <a target="_blank" href="#">"MDMASNet: A dual-task interactive semi-supervised remote sensing image segmentation method"</a>, L Zhang, Z Yang, G Zhou, C Lu, A Chen, Y Ding, Y Wang, L Li, W Cai, <b>Signal Processing 212</b>, article 109152, 4 citations, 2023.</li>
+    <li><span class="label label-success">Materials Evaluation 2023</span> <a target="_blank" href="#">"Aerial Nondestructive Testing and Evaluation (aNDT&E)"</a>, G Chen, L Li, Z Shi, B Shang, <b>Materials Evaluation 81 (1)</b>, 3 citations, 2023.</li>
+    <li><span class="label label-success">Plant Methods 2022</span> <a target="_blank" href="#">"Identification of citrus diseases based on AMSR and MF-RANet"</a>, R Yang, T Liao, P Zhao, W Zhou, M He, L Li, <b>Plant Methods 18 (1)</b>, p. 113, 3 citations, 2022.</li>
+    <li><span class="label label-success">International Journal of Agricultural and Biological Engineering 2021</span> <a target="_blank" href="#">"Performance evaluation of a multi-rotor unmanned agricultural aircraft system for chemical application"</a>, H Zhu, H Li, AP Adam, L Li, L Tian, <b>International Journal of Agricultural and Biological Engineering 14 (4)</b>, pp. 43-52, 3 citations, 2021.</li>
+    <li><span class="label label-success">Expert Systems with Applications 2024</span> <a target="_blank" href="#">"Identification of rice disease under complex background based on PSOC-DRCNet"</a>, Z Liu, G Zhou, W Zhu, Y Chai, L Li, Y Wang, Y Hu, W Dai, R Liu, L Sun, <b>Expert Systems with Applications 249</b>, article 123643, 2 citations, 2024.</li>
+    <li><span class="label label-success">2022</span> <a target="_blank" href="#">"CAAP Final Report"</a>, P Ma, TG Mondal, Y Zhuo, Z Shi, B Shang, L Li, G Chen, 2 citations, 2022.</li>
+    <li><span class="label label-success">Engineering and Science of Biomass Feedstock Production and Provision 2014</span> <a target="_blank" href="#">"Preharvest Monitoring of Biomass Production"</a>, L Li, L Tian, T Ahamed, pp. 61-83, 2 citations, 2014.</li>
+    <li><span class="label label-success">Materials Science and Engineering of Powder Metallurgy 2011</span> <a target="_blank" href="#">"Technique of solvent debinding for water atomized stainless steel powder injection molding compacts"</a>, LI ML, LI YM, LLJ HE H, <b>Materials Science and Engineering of Powder Metallurgy 16 (1)</b>, pp. 61-66, 2 citations, 2011.</li>
+    <li><span class="label label-success">Automation in Construction 2023</span> <a target="_blank" href="#">"Segmentation network of concrete cracks with multi-frequency OctaveRes dual encoder and cross-attention mechanism optimized by average weight"</a>, Q Wang, A Chen, W Cai, C Cai, S Fang, L Li, Y Wang, G Zhou, <b>Automation in Construction 155</b>, article 105050, 1 citation, 2023.</li>
+    <li><span class="label label-success">Natural Hazards Review 2023</span> <a target="_blank" href="#">"Machine learning-based seismic damage assessment of residential buildings considering multiple earthquake and structure uncertainties"</a>, X Yuan, L Li, H Zhang, Y Zhu, G Chen, C Dagli, <b>Natural Hazards Review 24 (3)</b>, article 04023024, 1 citation, 2023.</li>
+    <li><span class="label label-success">Applied Mechanics and Materials 2010</span> <a target="_blank" href="#">"Parameter design of heave compensation system of deep-sea mining based on dynamic vibration absorber and its experimental study"</a>, LJ Li, SJ Liu, JY Zuo, <b>Applied Mechanics and Materials 34</b>, pp. 1999-2005, 1 citation, 2010.</li>
+                        </ul>
+                        
+                        
+                        <!-- <p><a href="publications/" class="btn btn-primary">All Publications &raquo;</a> -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+    
+ 
+         <!-- Awards Section -->
+         <section  name="awards" id="awards">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-awards-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Awards and Honors <a href="https://www.uidaho.edu/cals/soil-and-water-systems/our-people/johnny-li" class="btn btn-primary">More &raquo;</a></h2>
+                         <ul>
+                            <!-- Grants and Contracts Awarded -->
+                            <li>
+                                <span class="label label-success">NSF ERI Program</span> <a target="_blank" href="#link_to_details">Drones-Enabled Active Sensing System (DEASS)</a>, "Detection of Subsurface Defects in Civil Infrastructure through Synchronized Drone Swarming and Thermal Imaging", 2022-2023, Sole-PI, $199,946.
+                            </li>
+                            <li>
+                                <span class="label label-success">Plant Recognition Challenge</span> <a target="_blank" href="#link_to_details">Intelligent Real-time Plant Recognition System (IRPRMS)</a>, for Site-specific Utility Vegetation Mapping based on Multispectral Remote Sensing Imagery and Deep Learning, 2021-2022, PI, $50,000.
+                            </li>
+                            <li>
+                                <span class="label label-success">T-REX GEO-SEED</span> <a target="_blank" href="#link_to_details">Mixed Reality Interface of Geospatial Data</a>, towards Efficient, Effective, and Reliable Bridge Inspection, 2021-2022, Senior Personnel, $25,000.
+                            </li>
+                            <li>
+                                <span class="label label-success">DoD Navy SBIR Phase II</span> <a target="_blank" href="#link_to_details">Remote Egg-oiling System</a>, with Autonomous and Automated Target Object Identification for Nuisance Bird Management, 2020-2023, PI, $999,538.
+                            </li>
+                            <li>
+                                <span class="label label-success">DoD Navy SBIR Phase I</span> <a target="_blank" href="#link_to_details">Remote Egg-oiling System</a>, with Autonomous and Automated Target Object Identification for Nuisance Bird Management, 2018-2019, PI, $224,999.
+                            </li>
+                            <!-- Honors and Awards -->
+                            <li>
+                                <span class="label label-success">2022 NSF CGCA Panel</span> <a target="_blank" href="#link_to_award">Fellows for CMMI’s Game Changer Academies for Advancing Research Innovation</a>.
+                            </li>
+                            <li>
+                                <span class="label label-success">2013 Agricultural Engineering International</span> <a target="_blank" href="#link_to_award">Associate Editor</a>, CIGR (Commission Internationale du Genie Rural) Journal.
+                            </li>
+                        </ul>
+                        
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+
+        
+        
+
+        
+        <!-- Home Section -->
+        <section  name="contact" id="contact">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-10">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-contact-content').toggle();">Contact  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-contact-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Contact</h2>
+                        <div class="container lead">
+                            <div align="left" class="col-md-3">
+                                <h4 class="myEN">
+                                    POSTAL ADDRESS (EN | <a target="_blank" onclick="javascript:$('.myEN').hide();$('.myEL').show();">CN</a>)
+                                </h4>
+                                
+                                <h4 class="myEL" style="display:none">
+                                    邮箱地址 (<a target="_blank" onclick="javascript:$('.myEN').show();$('.myEL').hide();">EN</a> | CN)
+                                </h4>
+                                
+                            <!---<p class="myEL" style="display:none">
+                                Δημήτρης Ζεϊναλιπούρ<br>
+                                Τμήμα Πληροφορικής<br>
+                                Πανεπιστήμιο Κύπρου<br>
+                                Τ.Θ. 20537<br>
+                                1678 Λευκωσία, ΚΥΠΡΟΣ<br>
+                                </p>
+                            -->
+                                <p class="myEN">
+                                Johnny Li<br>
+                                Dept. of Soil and Water Systems<br>
+                                University of Idaho<br>
+                                875 Perimeter Drive MS 2060<br>
+                                Moscow, ID 83844-2060<br>
+                                </p>
+                                Email:
+                                <script language="JavaScript">
+                                    <!--
+                                    document.write("&nbsp;");
+                                    spiderjam('liujunl','uidaho.edu');
+                                    -->
+                                    </script><br>
+                            </div>
+                            
+                            <div align="left" class="col-md-3">
+                                <h4>CONTACT VCARD</h4>
+                                <p>
+                                <a href="zeinalipour.vcf"><img src="images/bio.png" border="0" width="150"><br>
+                                    https://www.uidaho.edu</a>
+                                
+                                <!--   <a href="zeinalipour.vcf" class="btn btn-primary">Get VCF Card &raquo;</a>-->
+                                </p>
+                            </div>
+                            
+                            <div align="left" class="col-md-3">
+                                <h4>OFFICE ADDRESS</h4>
+                                <p>James Martin Building<br/>
+                                Room 81A,<br/>
+                                606 S Rayburn St,<br/>
+                                Moscow, Idaho<br/>
+                                Tel: <a href="tel:0035722892755">208-885-1015</a><br/>
+                                Fax: <a href="tel:0035722892701">208-885-1015</a><br/>
+                                <br/>
+                                </p>
+                            </div>
+                            
+                            <div align="left" class="col-md-3">
+                                <h4>OFFICE DIRECTIONS</h4>
+                                <p><a href="https://goo.gl/RLbcXM" target="_blank"><img src="images/office.png" border="0"
+                                    width="150"> </a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="star-primary">
+                    </div>
+                    
+                    </section>
+        
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2015 | D. Zeinalipour. Credits: AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>
